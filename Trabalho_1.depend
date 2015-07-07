@@ -1,0 +1,199 @@
+# depslib dependency file v1.0
+1429123727 source:e:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Model/Lista_Livros.h"
+	"Model/Lista_Usuarios.h"
+
+1429103598 source:e:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.c
+	"Lista_Livros.h"
+
+1429102220 e:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.h
+	<stdio.h>
+	<stdlib.h>
+
+1429545188 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Model/Lista_Livros.h"
+	"Model/Lista_Usuarios.h"
+	"libs/biblioteca.h"
+	"View/Telas_Principal.h"
+	<windows.h>
+
+1429103598 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.c
+	"Lista_Livros.h"
+
+1429102220 c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.h
+	<stdio.h>
+	<stdlib.h>
+
+1429123590 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_usuarios.c
+	"Lista_Usuarios.h"
+	<string.h>
+
+1429123302 c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_usuarios.h
+	<stdio.h>
+	<stdlib.h>
+
+1429123302 e:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_usuarios.h
+	<stdio.h>
+	<stdlib.h>
+
+1429205303 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.c
+	"Lista_Livros.h"
+	"Lista_Emprestimos.h"
+	<string.h>
+
+1429205249 c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.h
+	<stdio.h>
+	<stdlib.h>
+	"Lista_Usuarios.h"
+	"Lista_Livros.h"
+
+1339521204 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\libs\biblioteca.c
+	<windows.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+
+1339521266 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\libs\validacao.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+
+1429559423 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_usuario.c
+	"Telas_Usuario.h"
+	"Telas_Principal.h"
+	"../Controler/Controler_Usuario.h"
+	"../Model/Lista_Usuarios.h"
+
+1429546555 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_principal.c
+	"Telas_Principal.h"
+	"../Controler/Controler_Menu.h"
+	<stdio.h>
+
+1429278234 c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_principal.h
+	"../libs/biblioteca.h"
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+
+1338255980 c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\libs\biblioteca.h
+
+1429550526 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_menu.c
+	"Controler_Menu.h"
+	"../View/Telas_Usuario.h"
+	"../libs/biblioteca.h"
+
+1429545637 c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_menu.h
+	<stdio.h>
+	<stdlib.h>
+
+1429558844 c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_usuario.h
+	<stdio.h>
+	<stdlib.h>
+
+1429559352 source:c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_usuario.c
+	"Controler_Usuario.h"
+	"../View/Telas_Usuario.h"
+	"../View/Telas_Principal.h"
+	"../libs/biblioteca.h"
+
+1429550771 c:\users\evertonr\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_usuario.h
+
+1436194697 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_menu.c
+	"Controler_Menu.h"
+	"../View/Telas_Usuario.h"
+	"../libs/biblioteca.h"
+	"../Model/Lista_Usuarios.h"
+
+1436194701 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_menu.h
+	"../Model/Lista_Usuarios.h"
+	<stdio.h>
+	<stdlib.h>
+
+1436197320 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_usuario.h
+	"../Model/Lista_Usuarios.h"
+	<stdio.h>
+	<stdlib.h>
+
+1338255980 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\libs\biblioteca.h
+
+1436273031 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_usuario.c
+	"Controler_Usuario.h"
+	"../View/Telas_Usuario.h"
+	"../View/Telas_Principal.h"
+	"../libs/biblioteca.h"
+
+1436197233 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_usuario.h
+	"../Model/Lista_Usuarios.h"
+
+1429278234 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_principal.h
+	"../libs/biblioteca.h"
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+
+1339521204 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\libs\biblioteca.c
+	<windows.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+
+1339521266 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\libs\validacao.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+
+1436273331 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Model/Lista_Livros.h"
+	"Model/Lista_Usuarios.h"
+	"libs/biblioteca.h"
+	"View/Telas_Principal.h"
+	<windows.h>
+
+1436273331 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.h
+	<stdio.h>
+	<stdlib.h>
+
+1436198482 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_usuarios.h
+	<stdio.h>
+	<stdlib.h>
+
+1429205303 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.c
+	"Lista_Livros.h"
+	"Lista_Emprestimos.h"
+	<string.h>
+
+1429205249 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.h
+	<stdio.h>
+	<stdlib.h>
+	"Lista_Usuarios.h"
+	"Lista_Livros.h"
+
+1429103598 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.c
+	"Lista_Livros.h"
+
+1436271994 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_usuarios.c
+	"Lista_Usuarios.h"
+	<string.h>
+
+1436194712 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_principal.c
+	"Telas_Principal.h"
+	"../Controler/Controler_Menu.h"
+	"../Model/Lista_Usuarios.h"
+	<stdio.h>
+
+1436273015 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_usuario.c
+	<stdio.h>
+	<conio.h>
+	"Telas_Usuario.h"
+	"Telas_Principal.h"
+	"../Controler/Controler_Usuario.h"
+	"../Model/Lista_Usuarios.h"
+

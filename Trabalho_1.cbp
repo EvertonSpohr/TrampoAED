@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Trabalho_1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Trabalho_1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Trabalho_1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Controler/Controler_Menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Controler/Controler_Menu.h" />
+		<Unit filename="Controler/Controler_Usuario.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Controler/Controler_Usuario.h" />
+		<Unit filename="Model/Lista_Emprestimos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Model/Lista_Emprestimos.h" />
+		<Unit filename="Model/Lista_Livros.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Model/Lista_Livros.h" />
+		<Unit filename="Model/Lista_Usuarios.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Model/Lista_Usuarios.h" />
+		<Unit filename="View/Telas_Principal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="View/Telas_Principal.h" />
+		<Unit filename="View/Telas_Usuario.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="View/Telas_Usuario.h" />
+		<Unit filename="libs/biblioteca.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libs/biblioteca.h" />
+		<Unit filename="libs/validacao.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libs/validacao.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
