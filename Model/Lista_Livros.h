@@ -26,11 +26,11 @@
     Lista_Acervo *Acervo;
 
     void Iniciliza_Acervo();
-    int Consulta_Acervo(int Codigo);
-    Lista_Acervo *Retorna_Elemento(int Codigo);
+    int Consulta_Acervo(char titulo[]);
     int Insere_Acervo(Livro L);
-    int Remover_Livro(int Codigo);
+    int Remover_Livro(char titulo[]);
     void Imprime_Acervo();
+    Lista_Acervo *Busca_Livro_Titulo(char titulo[]);
 
 
 

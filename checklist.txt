@@ -1,0 +1,13 @@
+Acervo
+	- Alterar
+	- Excluir
+
+Emprestimos
+	CRUD
+
+* Lista de todos os livros emprestados com suas respectivas datas de
+devolução e pessoas que realizaram o empréstimo;
+• Lista com todos os livros do acervo. Nessa lista devem estar descritos o
+número de exemplares por livro, autores, ano e área
+
+SALVAR TUDO EM CSV

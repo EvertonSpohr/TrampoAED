@@ -42,7 +42,7 @@ void tela_menu_principal(Lista_Usuario *LU)
         TableBorder(48,15,55,17,1,15,0,0);
 
         gotoxy(50,16); scanf("%d", &OPC);
-        seleciona_menu(OPC, LU);
+        seleciona_menu(OPC);
 
     }
     while(OPC < 1 || OPC > 5);

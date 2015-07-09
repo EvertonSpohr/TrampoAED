@@ -1,31 +1,31 @@
-#include "Controler_Menu.h"
-#include "../View/Telas_Usuario.h"
+#include "Controler_Livros.h"
 #include "../View/Telas_Livros.h"
-#include "../libs/biblioteca.h"
-#include "../Model/Lista_Usuarios.h"
+#include "../View/Telas_Principal.h"
 
-    void seleciona_menu(int OPC)
+void seleciona_menu_livros(int OPC)
     {
         clrscr();
 
             switch (OPC)
             {
             case 1:
-                Menu_Principal_Usuario();
+                Tela_Cadastrar_Livros();
                 break;
 
             case 2:
-                Menu_Principal_Livros();
+                Tela_Alterar_Livros();
                 break;
 
             case 3:
+                Tela_Remover_Livros();
                 break;
 
             case 4:
+                Tela_Pesquisar_Livros();
                 break;
 
             case 5:
-                //exit(1);
+                tela_menu_principal();
                 break;
 
             }

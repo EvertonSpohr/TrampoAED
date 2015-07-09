@@ -1,4 +1,5 @@
 #include "Lista_Livros.h"
+#include <string.h>
 
     void Iniciliza_Acervo()
     {
@@ -6,7 +7,7 @@
     }
 
 
-    int Consulta_Acervo(int Codigo)
+    int Consulta_Acervo(char titulo[])
     {
 
         Lista_Acervo *P;
@@ -14,7 +15,7 @@
 
         while(P != NULL)
         {
-            if(P->livro.Codigo == Codigo)
+            if(strcmp(Acervo->livro.Titulo, titulo) == 0)
             {
                 return(1);
             }
@@ -26,25 +27,26 @@
         return (0);
     }
 
-    Lista_Acervo *Retorna_Elemento(int Codigo)
-    {
-    int achou = 0;
 
-    while((Acervo != NULL) && (achou == 0))
+    Lista_Acervo *Busca_Livro_Titulo(char titulo[])
     {
-      if(Acervo->livro.Codigo == Codigo)
-         achou = 1;
-      else
-         Acervo = Acervo->Prox;
+        int achou = 0;
+
+        while((Acervo != NULL) && (achou == 0))
+        {
+          if(strcmp(Acervo->livro.Titulo, titulo) == 0)
+             achou = 1;
+          else
+             Acervo = Acervo->Prox;
+        }
+        return (Acervo);
     }
-    return (Acervo);
-}
 
     int Insere_Acervo(Livro L)
     {
         Lista_Acervo *New;
 
-        if(!Consulta_Acervo(L.Codigo))
+        if(!Consulta_Acervo(L.Titulo))
         {
               New = ((Lista_Acervo*)malloc(sizeof(Lista_Acervo)));
               New->livro = L;
@@ -62,12 +64,12 @@
     }
 
 
-    int Remover_Livro(int Codigo)
+    int Remover_Livro(char titulo[])
     {
        Lista_Acervo *P;
        int achou = 0;
 
-       P = Retorna_Elemento(Codigo);
+       P = Busca_Livro_Titulo(titulo);
 
        if(P != NULL)
        {

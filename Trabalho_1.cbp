@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Controler/Controler_Livros.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Controler/Controler_Livros.h" />
 		<Unit filename="Controler/Controler_Menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -51,6 +55,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Model/Lista_Usuarios.h" />
+		<Unit filename="View/Telas_Livros.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="View/Telas_Livros.h" />
 		<Unit filename="View/Telas_Principal.c">
 			<Option compilerVar="CC" />
 		</Unit>

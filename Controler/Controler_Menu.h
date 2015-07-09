@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-    void seleciona_menu(int OPC, Lista_Usuario *LU);
+    void seleciona_menu(int OPC);
 
 
 #endif // CONTROLER_MENU_H_INCLUDED
