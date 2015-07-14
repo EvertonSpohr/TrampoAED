@@ -8,6 +8,7 @@
 void Menu_Principal_Livros()
 {
     int OPC;
+    clrscr();
 
     do
     {
@@ -119,7 +120,7 @@ void Tela_Pesquisar_Livros()
 {
     char Titulo[255] = "";
 
-    tela_principal("Pesquisar Usuario");
+    tela_principal("Pesquisar Livro");
 
     gotoxy(7,7);
     printf("Titulo: ");
@@ -129,7 +130,7 @@ void Tela_Pesquisar_Livros()
 
     Lista_Acervo *LA = Busca_Livro_Titulo(Titulo);
 
-    gotoxy(7,7); printf("                                                                        ");
+    gotoxy(7,7); clreol();
 
     if(LA != NULL)
     {
@@ -185,54 +186,59 @@ void Tela_Pesquisar_Livros()
 
 void Tela_Alterar_Livros()
 {
-    char Email[255] = "";
+    char Titulo[255] = "";
 
-    tela_principal("Alterar Usuario");
+    tela_principal("Alterar Livro");
 
     gotoxy(7,7);
-    printf("E-Mail: ");
+    printf("Titulo: ");
     fflush(stdin);
     gotoxy(15,7);
-    gets(Email);
+    gets(Titulo);
 
-    Lista_Usuario *LU = Retorna_Usuario(Email);
+    Lista_Acervo *LA = Busca_Livro_Titulo(Titulo);
 
-    gotoxy(7,7); printf("                                                                        ");
+    gotoxy(7,7); clreol();
 
-    if(LU != NULL)
+    if(LA != NULL)
     {
-        gotoxy(7,7); printf("Usuario encontrado!");
+        gotoxy(7,7); printf("Livro encontrado!");
 
         gotoxy(7,9);
-        printf("Nome: ");
+        printf("Titulo: ");
         gotoxy(7,10);
-        printf("E-Mail: ");
-        gotoxy(7,11);
-        printf("Data de Nascimento: ");
+        printf("Autor(es): ");
         gotoxy(7,12);
+        printf("Ano: ");
+        gotoxy(7,13);
+        printf("Numero de exemplares: ");
+        gotoxy(7,14);
         printf("Area: ");
 
         fflush(stdin);
-        gotoxy(14,9);
-        puts(LU->Users.Nome);
+        gotoxy(15,9);
+        puts(LA->livro.Titulo);
 
         fflush(stdin);
-        gotoxy(16,10);
-        puts(LU->Users.Email);
+        gotoxy(18,10);
+        puts(LA->livro.Autores);
 
         fflush(stdin);
-        gotoxy(28,11);
-        puts(LU->Users.Data_Nasc);
+        gotoxy(12,12);
+        puts(LA->livro.Ano);
 
         fflush(stdin);
-        gotoxy(14,12);
-        puts(LU->Users.Area);
+        gotoxy(29,13);
+        printf("%d", LA->livro.Num_Exemp);
 
         fflush(stdin);
+        gotoxy(14,14);
+        puts(LA->livro.Area);
+
+        char Titulo_Original[255] = "";
+        strcpy(Titulo_Original, LA->livro.Titulo);// Email_Original = LU->Users.Email;
+
         char OPC;
-
-        char Email_Original[255] = "";
-        strcpy(Email_Original, LU->Users.Email);// Email_Original = LU->Users.Email;
 
         gotoxy(7,14);
         printf("Alterar:     (S/N)");
@@ -244,76 +250,82 @@ void Tela_Alterar_Livros()
         if(OPC == 'S' || OPC == 's')
         {
             clrscr();
-            tela_principal("Alterar Usuario");
+            tela_principal("Alterar Livro");
 
             gotoxy(7,9);
-            printf("Nome: ");
-            gotoxy(7,10);
-            printf("E-Mail: ");
-            gotoxy(7,11);
-            printf("Data de Nascimento: ");
-            gotoxy(7,12);
-            printf("Area: ");
+    printf("Titulo: ");
+    gotoxy(7,10);
+    printf("Autor(es), separe-os por ';': ");
+    gotoxy(7,12);
+    printf("Ano: ");
+    gotoxy(7,13);
+    printf("Numero de exemplares: ");
+    gotoxy(7,14);
+    printf("Area: ");
 
-            Usuario U;
+    Livro L;
 
-            fflush(stdin);
-            gotoxy(14,9);
-            gets(U.Nome);
+    fflush(stdin);
+    gotoxy(15,9);
+    gets(L.Titulo);
 
-            fflush(stdin);
-            gotoxy(16,10);
-            gets(U.Email);
+    fflush(stdin);
+    gotoxy(37,10);
+    gets(L.Autores);
 
-            fflush(stdin);
-            gotoxy(28,11);
-            gets(U.Data_Nasc);
+    fflush(stdin);
+    gotoxy(12,12);
+    gets(L.Ano);
 
-            fflush(stdin);
-            gotoxy(14,12);
-            gets(U.Area);
+    fflush(stdin);
+    gotoxy(29,13);
+    scanf("%d", &L.Num_Exemp);
 
-            char OPCS;
+    fflush(stdin);
+    gotoxy(14,14);
+    gets(L.Area);
 
-            gotoxy(7,14);
-            printf("Salvar Usuario:     (S/N)");
-            gotoxy(23,14);
-            scanf("%c", &OPCS);
+    fflush(stdin);
+    char OPC;
 
-            fflush(stdin);
+    gotoxy(7,16);
+    printf("Salvar livro:     (S/N)");
+    gotoxy(22,16);
+    scanf("%c", &OPC);
 
-            if(OPCS == 'S' || OPCS == 's')
+    fflush(stdin);
+
+    if(OPC == 'S' || OPC == 's')
+    {
+        if(Remover_Livro(Titulo_Original) == 1)
+        {
+            if(Insere_Acervo(L) == 1)
             {
-                if(Remover_Usuario(Email_Original) == 1)
-                {
-                    if(Insere_Usuario(U) == 1)
-                    {
-                    gotoxy(7,16);
-                    printf("Usuario salvo com sucesso!");
-                    getchar();
-                    Menu_Principal_Livros();
-                    }
-                    else
-                    {
-                        gotoxy(7,16);
-                        printf("Falha ao alterar usuario! E-mail ja cadastrado!");
-                        getchar();
-                        Menu_Principal_Livros();
-                    }
-                }
-                else
-                {
-                gotoxy(7,16);
-                printf("Falha ao alterar usuario!");
-                getchar();
-                Menu_Principal_Livros();
-            }
-
+            gotoxy(7,16);
+            printf("Livro salvo com sucesso!");
+            getchar();
+            Menu_Principal_Livros();
             }
             else
             {
+                gotoxy(7,16);
+                printf("Falha ao inserir livro! Livro ja cadastrado!");
+                getchar();
                 Menu_Principal_Livros();
             }
+        }
+        else
+        {
+            gotoxy(7,16);
+            printf("Falha ao inserir livro! Livro ja cadastrado!");
+            getchar();
+            Menu_Principal_Livros();
+        }
+    }
+    else
+    {
+        Menu_Principal_Livros();
+    }
 
         }
         else
@@ -335,54 +347,60 @@ void Tela_Alterar_Livros()
 
 void Tela_Remover_Livros()
 {
-    char Email[255] = "";
 
-    tela_principal("Remover Usuario");
+    char Titulo[255] = "";
+
+    tela_principal("Remover Livro");
 
     gotoxy(7,7);
-    printf("E-Mail: ");
+    printf("Titulo: ");
     fflush(stdin);
     gotoxy(15,7);
-    gets(Email);
+    gets(Titulo);
 
-    Lista_Usuario *LU = Retorna_Usuario(Email);
+    Lista_Acervo *LA = Busca_Livro_Titulo(Titulo);
 
     gotoxy(7,7); clreol();
 
-    if(LU != NULL)
+    if(LA != NULL)
     {
-        gotoxy(7,7); printf("Usuario encontrado!");
+        gotoxy(7,7); printf("Livro encontrado!");
 
         gotoxy(7,9);
-        printf("Nome: ");
+        printf("Titulo: ");
         gotoxy(7,10);
-        printf("E-Mail: ");
-        gotoxy(7,11);
-        printf("Data de Nascimento: ");
+        printf("Autor(es): ");
         gotoxy(7,12);
+        printf("Ano: ");
+        gotoxy(7,13);
+        printf("Numero de exemplares: ");
+        gotoxy(7,14);
         printf("Area: ");
 
         fflush(stdin);
-        gotoxy(14,9);
-        puts(LU->Users.Nome);
+        gotoxy(15,9);
+        puts(LA->livro.Titulo);
 
         fflush(stdin);
-        gotoxy(16,10);
-        puts(LU->Users.Email);
+        gotoxy(18,10);
+        puts(LA->livro.Autores);
 
         fflush(stdin);
-        gotoxy(28,11);
-        puts(LU->Users.Data_Nasc);
+        gotoxy(12,12);
+        puts(LA->livro.Ano);
 
         fflush(stdin);
-        gotoxy(14,12);
-        puts(LU->Users.Area);
+        gotoxy(29,13);
+        printf("%d", LA->livro.Num_Exemp);
 
         fflush(stdin);
+        gotoxy(14,14);
+        puts(LA->livro.Area);
+
         char OPC;
 
         gotoxy(7,14);
-        printf("Remover Usuario:     (S/N)");
+        printf("Remover Livro:     (S/N)");
         gotoxy(24,14);
         scanf("%c", &OPC);
 
@@ -390,11 +408,11 @@ void Tela_Remover_Livros()
 
         if(OPC == 'S' || OPC == 's')
         {
-            if(Remover_Usuario(LU->Users.Email) == 1)
+            if(Remover_Livro(LA->livro.Titulo) == 1)
             {
 
                     gotoxy(7,16);
-                    printf("Usuario removido com sucesso!");
+                    printf("Livro removido com sucesso!");
                     getchar();
                     Menu_Principal_Livros();
 
@@ -402,7 +420,7 @@ void Tela_Remover_Livros()
             else
             {
                 gotoxy(7,16);
-                printf("Falha ao remover usuario!");
+                printf("Falha ao remover livro!");
                 getchar();
                 Menu_Principal_Livros();
             }
@@ -415,10 +433,14 @@ void Tela_Remover_Livros()
     else
     {
         gotoxy(7,18);
-        printf("Usuario nao encontrado!");
+        printf("Livro nao encontrado!");
         getchar();
         Menu_Principal_Livros();
     }
+
+
+
+
 
 }
 

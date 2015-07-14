@@ -1,5 +1,8 @@
 #include "Lista_Livros.h"
 #include <string.h>
+#include <conio.h>
+#include "../libs/biblioteca.h"
+#include "../View/Telas_Relatorios.h"
 
     void Iniciliza_Acervo()
     {
@@ -93,19 +96,3 @@
        }
     }
 
-    void Imprime_Acervo()
-    {
-       if(Acervo == NULL)
-          printf("Acervo de Livros vazio!");
-       else
-       {
-          while(Acervo)
-          {
-            printf("\nCodigo: %d, Titulo: %s, Autores: %s, Ano: %s, Area: %s ,Nro Exemplares: %d  ", Acervo->livro.Codigo,
-            Acervo->livro.Titulo, Acervo->livro.Autores, Acervo->livro.Ano, Acervo->livro.Area, Acervo->livro.Num_Exemp);
-
-            Acervo = Acervo->Prox;
-          }
-       }
-       getchar();
-    }

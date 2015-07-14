@@ -39,6 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Controler/Controler_Menu.h" />
+		<Unit filename="Controler/Controler_Relatorios.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Controler/Controler_Relatorios.h" />
 		<Unit filename="Controler/Controler_Usuario.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -63,6 +67,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="View/Telas_Principal.h" />
+		<Unit filename="View/Telas_Relatorios.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="View/Telas_Relatorios.h" />
 		<Unit filename="View/Telas_Usuario.c">
 			<Option compilerVar="CC" />
 		</Unit>

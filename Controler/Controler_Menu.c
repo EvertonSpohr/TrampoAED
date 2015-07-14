@@ -1,6 +1,7 @@
 #include "Controler_Menu.h"
 #include "../View/Telas_Usuario.h"
 #include "../View/Telas_Livros.h"
+#include "../View/Telas_Relatorios.h"
 #include "../libs/biblioteca.h"
 #include "../Model/Lista_Usuarios.h"
 
@@ -19,6 +20,7 @@
                 break;
 
             case 3:
+                Menu_Principal_Relatorios();
                 break;
 
             case 4:

@@ -1,5 +1,9 @@
 #include "Lista_Usuarios.h"
 #include <string.h>
+#include <string.h>
+#include <conio.h>
+#include "../libs/biblioteca.h"
+#include "../View/Telas_Relatorios.h"
 
     void Iniciliza_Usuario()
     {
@@ -97,18 +101,4 @@
        }
     }
 
-    void Imprime_Usuarios()
-    {
-       if(Users == NULL)
-          printf("Lista de Usuarios vazia!");
-       else
-       {
-          while(Users)
-          {
-            printf("\nNome: %s, Data Nasc: %s, Area: %s, Email: %s \n", Users->Users.Nome, Users->Users.Data_Nasc, Users->Users.Area, Users->Users.Email);
 
-            Users = Users->Prox;
-          }
-       }
-       getchar();
-    }

@@ -8,6 +8,7 @@
 void Menu_Principal_Usuario()
 {
     int OPC;
+    clrscr();
 
     do
     {

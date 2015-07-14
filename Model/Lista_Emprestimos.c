@@ -1,16 +1,6 @@
-
-
-
-
-
-
-    //;
-    //;
-    //void Imprime_Emprestimos(Lista_Emprestimo *Emprestimos);
-
-    #include "Lista_Livros.h"
-    #include "Lista_Emprestimos.h"
-    #include <string.h>
+#include "Lista_Livros.h"
+#include "Lista_Emprestimos.h"
+#include <string.h>
 
     void Iniciliza_Emprestimos(Lista_Emprestimo **Emprestimos)
     {

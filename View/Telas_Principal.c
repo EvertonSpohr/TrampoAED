@@ -8,7 +8,7 @@ void tela_principal(char *Titulo){
 
     SetConsoleTitle(" BIBLIOTECA COMPUTARIA "); // Define nome da console
 
-    system("mode 81, 25"); // define tamanha da tela
+    //system("mode 81, 25"); // define tamanha da tela
 
     TableBorder(0,0,79,24,2,15,1,1); // cria a borda
 
@@ -23,6 +23,7 @@ void tela_principal(char *Titulo){
 void tela_menu_principal(Lista_Usuario *LU)
 {
     int OPC;
+    clrscr();
 
     do
     {
@@ -33,7 +34,7 @@ void tela_menu_principal(Lista_Usuario *LU)
         TableBorder(28,8,55,14,2,15,0,0);  // cria a borda
         gotoxy(31,9);  printf("[1] USUARIOS");
         gotoxy(31,10); printf("[2] ACERVO");
-        gotoxy(31,11); printf("[3] CONSULTAS");
+        gotoxy(31,11); printf("[3] RELATORIOS");
         gotoxy(31,12); printf("[4] EMPRESTIMOS");
         gotoxy(31,13); printf("[5] SALVAR E SAIR");
 
