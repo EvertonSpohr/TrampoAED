@@ -306,7 +306,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1436923254 c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.h
+1436962331 c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.h
 	<stdio.h>
 	<stdlib.h>
 	"Lista_Usuarios.h"
@@ -349,7 +349,7 @@
 	"View/Telas_Principal.h"
 	<windows.h>
 
-1436896453 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.c
+1436962308 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.c
 	"Lista_Livros.h"
 	"Lista_Emprestimos.h"
 	<string.h>
@@ -383,7 +383,7 @@
 	"../Model/Lista_Usuarios.h"
 	<stdio.h>
 
-1436923314 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_relatorios.c
+1436925447 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_relatorios.c
 	<stdio.h>
 	<conio.h>
 	"Telas_Relatorios.h"

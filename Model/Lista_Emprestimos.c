@@ -2,9 +2,9 @@
 #include "Lista_Emprestimos.h"
 #include <string.h>
 
-    void Iniciliza_Emprestimos(Lista_Emprestimo **Emprestimos)
+    void Iniciliza_Emprestimos()
     {
-        *Emprestimos = NULL;
+        Emprestimos = NULL;
     }
 
 

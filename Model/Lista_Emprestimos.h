@@ -24,7 +24,9 @@
 
     }Lista_Emprestimo;
 
-    void Iniciliza_Emprestimos(Lista_Emprestimo **Emprestimos);
+    Lista_Emprestimo *Emprestimos;
+
+    void Iniciliza_Emprestimos();
     int Consulta_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email, int codigo);
     Lista_Emprestimo *Retorna_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email, int codigo);
     int Insere_Emprestimo(Lista_Emprestimo **Emprestimos, Emprestimo E);
