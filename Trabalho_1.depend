@@ -414,3 +414,11 @@
 
 1436983383 c:\users\lucas\workspace\aed\trampoaed\controler\controler_emprestimo.h
 
+1436990788 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_emprestimo.c
+	"Telas_Emprestimo.h"
+	<stdio.h>
+	<conio.h>
+	"Telas_Principal.h"
+	"../Controler/Controler_Emprestimo.h"
+	"../Model/Lista_Emprestimos.h"
+
