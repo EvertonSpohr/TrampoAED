@@ -166,12 +166,12 @@
 	<stdio.h>
 	<stdlib.h>
 
-1429205303 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.c
+1436975001 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.c
 	"Lista_Livros.h"
 	"Lista_Emprestimos.h"
 	<string.h>
 
-1429205249 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.h
+1436975001 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.h
 	<stdio.h>
 	<stdlib.h>
 	"Lista_Usuarios.h"
@@ -242,7 +242,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1436807844 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_relatorios.c
+1436975001 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_relatorios.c
 	<stdio.h>
 	<conio.h>
 	"Telas_Relatorios.h"
