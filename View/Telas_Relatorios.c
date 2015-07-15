@@ -46,7 +46,12 @@ void Menu_Principal_Relatorios()
 
 void Tela_Lista_Emprestimos()
 {
+    clrscr();
 
+    gotoxy(30,4);
+    printf("LISTA DE EMPRESTIMOS");
+
+    Imprime_Emprestimos(NULL);
 }
 
 
@@ -106,6 +111,12 @@ void Imprime_Usuarios()
          getch();
          Menu_Principal_Relatorios();
     }
+
+ void Imprime_Emprestimos(Lista_Emprestimo *Emprestimos){
+
+    getch();
+    Menu_Principal_Relatorios();
+ }
 
  void Imprime_Acervo()
     {
