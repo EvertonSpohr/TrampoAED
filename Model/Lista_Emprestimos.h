@@ -27,10 +27,10 @@
     Lista_Emprestimo *Emprestimos;
 
     void Iniciliza_Emprestimos();
-    int Consulta_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email, int codigo);
-    Lista_Emprestimo *Retorna_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email, int codigo);
+    int Consulta_Emprestimo(Lista_Emprestimo *Emprestimos,char *Email);
+    Lista_Emprestimo *Retorna_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email);
+    Lista_Emprestimo *Get_Emprestimos(Lista_Emprestimo *Emprestimos, char *Email);
     int Insere_Emprestimo(Lista_Emprestimo **Emprestimos, Emprestimo E);
-    int Remover_Emprestimo(Lista_Emprestimo **Emprestimos, char *Email, int codigo);
     void Imprime_Emprestimos(Lista_Emprestimo *Emprestimos);
 
 

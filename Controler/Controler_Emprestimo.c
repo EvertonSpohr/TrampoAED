@@ -1,6 +1,7 @@
-#include "Controler_Livros.h"
+#include "Controler_Emprestimo.h"
 #include "../View/Telas_Emprestimo.h"
 #include "../View/Telas_Principal.h"
+#include "../libs/biblioteca.h"
 
 void seleciona_menu_Emprestimo(int OPC)
     {
@@ -13,20 +14,11 @@ void seleciona_menu_Emprestimo(int OPC)
                 break;
 
             case 2:
-                Tela_Alterar_Emprestimo();
-                break;
-
-            case 3:
-                Tela_Remover_Emprestimo();
-                break;
-
-            case 4:
                 Tela_Pesquisar_Emprestimo();
                 break;
 
-            case 5:
+            case 3:
                 tela_menu_principal();
                 break;
-
             }
      }
