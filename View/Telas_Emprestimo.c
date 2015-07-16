@@ -58,52 +58,55 @@ void Tela_Cadastrar_Emprestimo()
     //Livro exixte?
     getchar();
     fflush(stdin);
-    char* livro = Get_Livro();
-
-    if(user_email!='0' && livro!='0'){
-        gotoxy(7,16);
-        printf("Continuar com o cadastro de Emprestimo?:     (S/N)");
-        gotoxy(7,17);
-        scanf("%c", &OPC);
-
-        fflush(stdin);
-
-        if(OPC == 'S' || OPC == 's'){
-            Empresta_Livros(livro);
-            clrscr();
-            tela_principal("Menu de Controle de Emprestimos");
-            gotoxy(7,9);
-            //printf("Data: ");
-
-            Emprestimo Emp;
-
-            char text[100];
-            time_t now = time(NULL);
-            struct tm *t = localtime(&now);
-
-            strftime(text, sizeof(text)-1, "%d/%m/%Y", t);
-
-            strcpy(Emp.Data_Emprestimo,text);
-            strcpy(Emp.Titulo,livro);
-            strcpy(Emp.Email_Usuario,user_email);
-            strcpy(Emp.Status,"livre");
 
 
-            //printf("%c",time);
-            if(Insere_Emprestimo(Emp)==1){
+    if(user_email!='0'){
+        char* livro = Get_Livro();
+        if(livro!='0'){
+            gotoxy(7,16);
+            printf("Continuar com o cadastro de Emprestimo?:     (S/N)");
+            gotoxy(7,17);
+            scanf("%c", &OPC);
 
-                gotoxy(7,16);
-                printf("Emprestimo salvo com sucesso!");
-                getchar();
-                Menu_Principal_Emprestimo();
-                }
-                else
-                {
+            fflush(stdin);
+
+            if(OPC == 'S' || OPC == 's'){
+                Empresta_Livros(livro);
+                clrscr();
+                tela_principal("Menu de Controle de Emprestimos");
+                gotoxy(7,9);
+                //printf("Data: ");
+
+                Emprestimo Emp;
+
+                char text[100];
+                time_t now = time(NULL);
+                struct tm *t = localtime(&now);
+
+                strftime(text, sizeof(text)-1, "%d/%m/%Y", t);
+
+                strcpy(Emp.Data_Emprestimo,text);
+                strcpy(Emp.Titulo,livro);
+                strcpy(Emp.Email_Usuario,user_email);
+                strcpy(Emp.Status,"livre");
+
+
+                //printf("%c",time);
+                if(Insere_Emprestimo(Emp)==1){
+
                     gotoxy(7,16);
-                    printf("Falha ao cadastrar Emprestimo!");
+                    printf("Emprestimo salvo com sucesso!");
                     getchar();
                     Menu_Principal_Emprestimo();
-                }
+                    }
+                    else
+                    {
+                        gotoxy(7,16);
+                        printf("Falha ao cadastrar Emprestimo!");
+                        getchar();
+                        Menu_Principal_Emprestimo();
+                    }
+            }
         }
     }else{
         getchar();
@@ -188,13 +191,13 @@ int Empresta_Livros(char *Titulo)
             printf("Não Há exemplares disponíveis deste livro!");
             return 0;
         }else{
-
+            L.Num_Exemp = L.Num_Exemp-1;
             fflush(stdin);
             if(Remover_Livro(L.Titulo) == 1)
             {
                 if(Insere_Acervo(L) == 1)
                 {
-                    L.Num_Exemp = L.Num_Exemp-1;
+
                     gotoxy(7,17);
                     printf("Existem %d exemplares deste livro",L.Num_Exemp);
                     getchar();
@@ -277,21 +280,39 @@ void Tela_Pesquisar_Emprestimo()
 
     tela_principal("Pesquisar Emprestimo");
 
-    /*gotoxy(7,7);
+    gotoxy(7,7);
     printf("Email: ");
     fflush(stdin);
     gotoxy(15,7);
     gets(Email);
 
-    Lista_Emprestimo *LA = Consulta_Emprestimo(Emprestimos,Email);
+    Lista_Emprestimo *LE = Get_Emprestimos(Email);
     //Consulta_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email, int codigo);
 
     gotoxy(7,7); clreol();
 
-    if(LA != NULL)
+
+    if(LE != NULL)
     {
         gotoxy(7,7); printf("Emprestimos encontrados!");
+        int Y = 5;
+        int X = 4;
+        int cont = 1;
 
+          while(LE)
+          {
+                gotoxy(X, ++Y); printf("%d ----------------------------------------------------- ", cont);
+                Y++;
+                gotoxy(X, ++Y); printf("Data de emprestimo: %s", LE->Emp.Data_Emprestimo);
+                gotoxy(X, ++Y); printf("Email: %s", LE->Emp.Email_Usuario);
+                Y++;
+                gotoxy(X, ++Y); printf("Titulo: %s", LE->Emp.Titulo);
+                gotoxy(X, ++Y); printf("Status: %s", LE->Emp.Status);
+                Y++; cont++;
+
+                LE = LE->Prox;
+          }
+        /*
         gotoxy(7,9);
         printf("Titulo: ");
         gotoxy(7,10);
@@ -338,6 +359,7 @@ void Tela_Pesquisar_Emprestimo()
         Menu_Principal_Emprestimo();
 
     }*/
+}
     getchar();
     Menu_Principal_Emprestimo();
 }
