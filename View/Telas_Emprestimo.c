@@ -27,8 +27,9 @@ void Menu_Principal_Emprestimo()
         gotoxy(31,10);
         printf("[2] PESQUISAR");
         gotoxy(31,11);
-        printf("[3] MENU PRINCIPAL");
+        printf("[3] Devolucao");
         gotoxy(31,12);
+        printf("[4] MENU PRINCIPAL");
         TableBorder(28,15,48,17,1,15,0,0);
         gotoxy(29,16);
         printf("OPCAO: ");
@@ -40,6 +41,11 @@ void Menu_Principal_Emprestimo()
 
     }
     while(OPC < 1 || OPC > 3);
+}
+
+void Tela_Devolucao_Emprestimo(){
+
+
 }
 
 void Tela_Cadastrar_Emprestimo()

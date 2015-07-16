@@ -6,10 +6,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void Tela_Devolucao_Emprestimo();
 void Menu_Principal_Emprestimo();
 void Tela_Cadastrar_Emprestimo();
 void Tela_Pesquisar_Emprestimo();
 char* Get_User();
 char* Get_Livro();
+
 
 #endif // TELAS_EMPRESTIMO_H_INCLUDED
