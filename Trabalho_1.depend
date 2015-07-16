@@ -276,10 +276,10 @@
 	"../View/Telas_Livros.h"
 	"../View/Telas_Principal.h"
 
-1436896453 c:\users\lucas\workspace\aed\trampoaed\controler\controler_livros.h
+1437064556 c:\users\lucas\workspace\aed\trampoaed\controler\controler_livros.h
 	"../Model/Lista_Livros.h"
 
-1437063363 c:\users\lucas\workspace\aed\trampoaed\model\lista_livros.h
+1437064556 c:\users\lucas\workspace\aed\trampoaed\model\lista_livros.h
 	<stdio.h>
 	<stdlib.h>
 
@@ -288,7 +288,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1437063363 c:\users\lucas\workspace\aed\trampoaed\model\lista_usuarios.h
+1437064556 c:\users\lucas\workspace\aed\trampoaed\model\lista_usuarios.h
 	<stdio.h>
 	<stdlib.h>
 
@@ -300,7 +300,7 @@
 
 1436896453 c:\users\lucas\workspace\aed\trampoaed\libs\biblioteca.h
 
-1437063363 source:c:\users\lucas\workspace\aed\trampoaed\controler\controler_menu.c
+1437065560 source:c:\users\lucas\workspace\aed\trampoaed\controler\controler_menu.c
 	"Controler_Menu.h"
 	"../View/Telas_Usuario.h"
 	"../View/Telas_Livros.h"
@@ -308,8 +308,10 @@
 	"../View/Telas_Config.h"
 	"../View/Telas_Emprestimo.h"
 	"../libs/biblioteca.h"
+	"../Model/Lista_Livros.h"
+	"../Model/Lista_Usuarios.h"
 
-1437063363 c:\users\lucas\workspace\aed\trampoaed\controler\controler_menu.h
+1437064556 c:\users\lucas\workspace\aed\trampoaed\controler\controler_menu.h
 	"../Model/Lista_Usuarios.h"
 	<stdio.h>
 	<stdlib.h>
@@ -338,7 +340,7 @@
 	"../View/Telas_Principal.h"
 	"../libs/biblioteca.h"
 
-1436896453 c:\users\lucas\workspace\aed\trampoaed\controler\controler_relatorios.h
+1437064556 c:\users\lucas\workspace\aed\trampoaed\controler\controler_relatorios.h
 
 1436896453 source:c:\users\lucas\workspace\aed\trampoaed\controler\controler_usuario.c
 	"Controler_Usuario.h"
@@ -346,7 +348,7 @@
 	"../View/Telas_Principal.h"
 	"../libs/biblioteca.h"
 
-1436896453 c:\users\lucas\workspace\aed\trampoaed\controler\controler_usuario.h
+1437064556 c:\users\lucas\workspace\aed\trampoaed\controler\controler_usuario.h
 
 1436896453 source:c:\users\lucas\workspace\aed\trampoaed\libs\biblioteca.c
 	<windows.h>
@@ -374,14 +376,14 @@
 	"Lista_Emprestimos.h"
 	<string.h>
 
-1437063363 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_livros.c
+1437065469 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_livros.c
 	"Lista_Livros.h"
 	<string.h>
 	<conio.h>
 	"../libs/biblioteca.h"
 	"../View/Telas_Relatorios.h"
 
-1437063363 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_usuarios.c
+1437064556 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_usuarios.c
 	"Lista_Usuarios.h"
 	<string.h>
 	<conio.h>
@@ -433,7 +435,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1436983383 c:\users\lucas\workspace\aed\trampoaed\controler\controler_emprestimo.h
+1437064556 c:\users\lucas\workspace\aed\trampoaed\controler\controler_emprestimo.h
 
 1437064436 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_emprestimo.c
 	"Telas_Emprestimo.h"
@@ -539,5 +541,16 @@
 	<stdio.h>
 	<stdlib.h>
 
-1437063363 c:\users\lucas\workspace\aed\trampoaed\model\modelconfig.h
+1437064556 c:\users\lucas\workspace\aed\trampoaed\model\modelconfig.h
+
+1437064556 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_config.c
+	<stdio.h>
+	<conio.h>
+	"Telas_Config.h"
+	"Telas_Principal.h"
+	"../Model/ModelConfig.h"
+
+1437064556 source:c:\users\lucas\workspace\aed\trampoaed\model\modelconfig.c
+	"ModelConfig.h"
+	<stdio.h>
 
