@@ -1,7 +1,8 @@
 #include "Lista_Usuarios.h"
 #include <string.h>
-#include <string.h>
 #include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "../libs/biblioteca.h"
 #include "../View/Telas_Relatorios.h"
 
@@ -100,5 +101,81 @@
           return(0);
        }
     }
+
+    void salva_usuarios()
+    {
+        FILE *Arquivo;
+        Arquivo = fopen("usuarios.csv","w");   /* Arquivo ASCII, para escrita */
+
+
+        if(!Arquivo)
+        {
+           printf( "Erro na abertura do arquivo");
+        }
+         else
+         {
+               if(Users == NULL)
+               {
+                   printf("Lista de usuarios vazia!");
+               }
+               else
+               {
+
+                while(Users)
+                {
+                    fprintf(Arquivo, "%s;%s;%s;%s\n",Users->Users.Nome, Users->Users.Data_Nasc, Users->Users.Area, Users->Users.Email);
+
+                    Users = Users->Prox;
+                  }
+
+                  fclose(Arquivo);
+               }
+         }
+    }
+
+void Carrega_Usuarios()
+{
+	FILE *Arquivo;
+    Arquivo = fopen("usuarios.csv","r");
+
+    char Linha[255];
+
+	if(Arquivo == NULL)
+    {
+        printf("Erro, nao foi possivel abrir o arquivo\n");
+    }
+	else
+    {
+        while( !feof(Arquivo) )
+        {
+            fscanf(Arquivo,"%s", &Linha);
+
+            int i;
+            char *p;
+            char *array[5];
+            i = 0;
+            p = strtok (Linha,";");
+
+            while (p != NULL)
+            {
+                array[i++] = p;
+                p = strtok (NULL, ";");
+            }
+
+            Usuario U;
+
+            strcpy(U.Nome, array[0]);
+            strcpy(U.Email, array[1]);
+            strcpy(U.Data_Nasc, array[2]);
+            strcpy(U.Area, array[3]);
+
+            Insere_Usuario(U);
+
+        }
+
+
+    }
+	fclose(Arquivo);
+}
 
 

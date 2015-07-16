@@ -31,7 +31,8 @@
     int Remover_Livro(char titulo[]);
     void Imprime_Acervo();
     Lista_Acervo *Busca_Livro_Titulo(char titulo[]);
-
+    void Salva_Livros();
+    void Carrega_Livros();
 
 
 

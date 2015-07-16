@@ -7,6 +7,7 @@
 #include <stdlib.h>
 
     void seleciona_menu(int OPC);
+    void Salvar();
 
 
 #endif // CONTROLER_MENU_H_INCLUDED

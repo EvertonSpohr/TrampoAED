@@ -30,23 +30,23 @@ void tela_menu_principal(Lista_Usuario *LU)
         tela_principal("Menu Principal");
 
         gotoxy(33,4); printf("SELECIONE UMA OPCAO");
-
-        TableBorder(28,8,55,14,2,15,0,0);  // cria a borda
+        TableBorder(28,8,55,15,2,15,0,0);
         gotoxy(31,9);  printf("[1] USUARIOS");
         gotoxy(31,10); printf("[2] ACERVO");
         gotoxy(31,11); printf("[3] RELATORIOS");
         gotoxy(31,12); printf("[4] EMPRESTIMOS");
-        gotoxy(31,13); printf("[5] SALVAR E SAIR");
+        gotoxy(31,13); printf("[5] CONFIGURACOES");
+        gotoxy(31,14); printf("[6] SALVAR E SAIR");
 
-        TableBorder(28,15,48,17,1,15,0,0);
-        gotoxy(29,16); printf("OPCAO: ");
-        TableBorder(48,15,55,17,1,15,0,0);
+        TableBorder(28,16,48,18,1,15,0,0);
+        gotoxy(29,17); printf("OPCAO: ");
+        TableBorder(48,16,55,18,1,15,0,0);
 
-        gotoxy(50,16); scanf("%d", &OPC);
+        gotoxy(50,17); scanf("%d", &OPC);
         seleciona_menu(OPC);
 
     }
-    while(OPC < 1 || OPC > 5);
+    while(OPC < 1 || OPC > 6);
 
 
 }

@@ -8,7 +8,7 @@
     }
 
 
-    int Consulta_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email)
+    int Consulta_Emprestimo( char *Email)
     {
 
         Lista_Emprestimo *P;
@@ -58,21 +58,21 @@
         return emprestimoByEmail;
     }
 
-    int Insere_Emprestimo(Lista_Emprestimo **Emprestimos, Emprestimo E)
+    int Insere_Emprestimo( Emprestimo E)
     {
         Lista_Emprestimo *New;
 
-        if(!Consulta_Emprestimo(*Emprestimos, E.Email_Usuario))
+        if(!Consulta_Emprestimo( E.Email_Usuario))
         {
               New = ((Lista_Emprestimo*)malloc(sizeof(Lista_Emprestimo)));
               New->Emp = E;
               New->Ant = NULL;
-              New->Prox = *Emprestimos;
-              if ((*Emprestimos) != NULL)
+              New->Prox = Emprestimos;
+              if ((Emprestimos) != NULL)
               {
-                 (*Emprestimos)->Ant = New;
+                 (Emprestimos)->Ant = New;
               }
-              *Emprestimos = New;
+              Emprestimos = New;
               return(1);
        }
        else

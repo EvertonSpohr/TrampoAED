@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
 	<File name="Controler\Controler_Menu.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+	<File name="Model\Lista_Usuarios.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="721" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="View\Telas_Principal.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="730" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="Model\Lista_Emprestimos.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="163" topLine="28" />
+		</Cursor>
+	</File>
+	<File name="View\Telas_Livros.c" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="View\Telas_Principal.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> d57606233506d83aa8ea1b9ce2d642414e25b93c
 		<Cursor>
 			<Cursor1 position="186" topLine="0" />
 		</Cursor>
@@ -21,12 +43,51 @@
 			<Cursor1 position="1872" topLine="68" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="Controler\Controler_Livros.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="View\Telas_Principal.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 0f2b64256f638ee51a311291e04c5490794faafd
+>>>>>>> d57606233506d83aa8ea1b9ce2d642414e25b93c
 		<Cursor>
 			<Cursor1 position="150" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="Controler\Controler_Emprestimo.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+	<File name="Model\Lista_Usuarios.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3099" topLine="108" />
+		</Cursor>
+	</File>
+	<File name="View\Telas_Emprestimo.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="185" topLine="149" />
+		</Cursor>
+	</File>
+	<File name="Controler\Controler_Livros.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="273" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="View\Telas_Livros.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="182" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="View\Telas_Relatorios.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="236" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Model\Lista_Livros.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="634" topLine="9" />
+=======
+	<File name="Model\Lista_Usuarios.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> d57606233506d83aa8ea1b9ce2d642414e25b93c
 		<Cursor>
 			<Cursor1 position="314" topLine="0" />
 		</Cursor>
@@ -58,7 +119,12 @@
 	</File>
 	<File name="Controler\Controler_Menu.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="608" topLine="15" />
+=======
+			<Cursor1 position="0" topLine="0" />
+>>>>>>> 0f2b64256f638ee51a311291e04c5490794faafd
+>>>>>>> d57606233506d83aa8ea1b9ce2d642414e25b93c
 		</Cursor>
 	</File>
 	<File name="Model\Lista_Livros.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -66,12 +132,41 @@
 			<Cursor1 position="1959" topLine="63" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="Controler\Controler_Usuario.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="78" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Model\Lista_Livros.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+	<File name="Controler\Controler_Menu.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="806" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="View\Telas_Principal.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Controler\Controler_Livros.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="View\Telas_Relatorios.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1721" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="Controler\Controler_Menu.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="208" topLine="0" />
+=======
+	<File name="Controler\Controler_Usuario.c" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> d57606233506d83aa8ea1b9ce2d642414e25b93c
 		<Cursor>
 			<Cursor1 position="464" topLine="18" />
 		</Cursor>
@@ -93,12 +188,22 @@
 	</File>
 	<File name="View\Telas_Relatorios.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="236" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="View\Telas_Livros.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="352" topLine="429" />
+=======
+			<Cursor1 position="2235" topLine="77" />
+>>>>>>> 0f2b64256f638ee51a311291e04c5490794faafd
+		</Cursor>
+	</File>
+	<File name="View\Telas_Usuario.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="128" topLine="0" />
+>>>>>>> d57606233506d83aa8ea1b9ce2d642414e25b93c
 		</Cursor>
 	</File>
 	<File name="View\Telas_Usuario.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -106,7 +211,46 @@
 			<Cursor1 position="2135" topLine="84" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="libs\biblioteca.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+	<File name="Controler\Controler_Relatorios.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="69" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="View\Telas_Usuario.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8784" topLine="206" />
+		</Cursor>
+	</File>
+	<File name="Controler\Controler_Usuario.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="78" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Controler\Controler_Usuario.c" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="271" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="libs\biblioteca.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1081" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="Model\Lista_Emprestimos.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="386" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Model\Lista_Livros.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1959" topLine="63" />
+=======
+	<File name="Model\Lista_Livros.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> d57606233506d83aa8ea1b9ce2d642414e25b93c
 		<Cursor>
 			<Cursor1 position="564" topLine="194" />
 		</Cursor>
@@ -138,12 +282,17 @@
 	</File>
 	<File name="View\Telas_Usuario.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="153" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="libs\validacao.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="297" topLine="117" />
+=======
+			<Cursor1 position="582" topLine="0" />
+>>>>>>> 0f2b64256f638ee51a311291e04c5490794faafd
+>>>>>>> d57606233506d83aa8ea1b9ce2d642414e25b93c
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
