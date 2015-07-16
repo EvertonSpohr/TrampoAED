@@ -44,6 +44,7 @@ void Menu_Principal_Config()
     }
     else
     {
+        gotoxy(14,10);
         printf("Operacao cancelada! Tecle para retornar ao menu principal");
         getch();
         tela_menu_principal();

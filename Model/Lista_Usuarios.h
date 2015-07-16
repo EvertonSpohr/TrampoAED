@@ -21,15 +21,62 @@
 
     }Lista_Usuario;
 
-    Lista_Usuario *Users;
+    Lista_Usuario *Users; ///LISTA ENCADEADA CONTENDO OS USUARIOS
 
+    /**
+    Método para inicializar a lista de usuarios
+
+    Pré-Cond: Lista de usuarios
+    Pós-Cond: Lista de usuarios apontando para null
+    */
     void Iniciliza_Usuario();
+
+    /**
+    Método para verificar se um usuário esta inserido na lista
+
+    Pré-Cond: email do usuario
+    Pós-Cond: retorna true se o usuario esta na lista, caso nao retorna false
+    */
     int Consulta_Usuario(char Email[]);
+
+    /**
+    Método para buscar um usuario
+
+    Pré-Cond: email do usuario
+    Pós-Cond: retorna node com as informacoes do usuario
+    */
     Lista_Usuario *Retorna_Usuario(char Email[]);
+
+    /**
+    Método para inserir usuario na lista
+
+    Pré-Cond: objeto usuario novo
+    Pós-Cond: lista de usuarios contendo o novo usuario
+    */
     int Insere_Usuario(Usuario U);
-    int Remover_Usuario(char *Email);
-    void Imprime_Usuarios();
+
+    /**
+    Método para remover o usuario da lista
+
+    Pré-Cond: email do usuario
+    Pós-Cond: lista de usuarios sem o usuario
+    */
+    int Remover_Usuario(char Email[]);
+
+    /**
+    Método para salvar os registros dos usuarios em um arquivo .csv
+
+    Pré-Cond: Lista de usuarios
+    Pós-Cond: arquivo .csv com os registros dos usuarios
+    */
     void salva_usuarios();
+
+    /**
+    Método para carregar os registros dos usuarios do arquivo .csv
+
+    Pré-Cond: arquivo .csv com os registros dos usuarios
+    Pós-Cond: lista de usuarios contendo os registros do arquivo
+    */
     void Carrega_Usuarios();
 
 

@@ -63,6 +63,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Model/Lista_Usuarios.h" />
+		<Unit filename="Model/ModelConfig.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Model/ModelConfig.h" />
+		<Unit filename="View/Telas_Config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="View/Telas_Config.h" />
 		<Unit filename="View/Telas_Emprestimo.c">
 			<Option compilerVar="CC" />
 		</Unit>

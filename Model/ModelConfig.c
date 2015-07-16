@@ -5,7 +5,7 @@
     void Salvar_Config()
     {
         FILE *Arquivo;
-        Arquivo = fopen("config.cfg","w");   /* Arquivo ASCII, para escrita */
+        Arquivo = fopen("Arquivos/config.cfg","w");   /* Arquivo ASCII, para escrita */
 
         if(!Arquivo)
         {
@@ -21,7 +21,7 @@
 void Ler_Config()
 {
 	FILE *Arquivo;
-    Arquivo = fopen("config.cfg","r");
+    Arquivo = fopen("Arquivos/config.cfg","r");
 
 	if(Arquivo == NULL)
     {

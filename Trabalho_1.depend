@@ -129,7 +129,7 @@
 	"../View/Telas_Emprestimo.h"
 	"../libs/biblioteca.h"
 
-1437013320 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_menu.h
+1437062046 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_menu.h
 	"../Model/Lista_Usuarios.h"
 	<stdio.h>
 	<stdlib.h>
@@ -147,7 +147,7 @@
 	"../View/Telas_Principal.h"
 	"../libs/biblioteca.h"
 
-1436804517 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_usuario.h
+1437062108 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_usuario.h
 
 1429278234 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_principal.h
 	"../libs/biblioteca.h"
@@ -176,11 +176,11 @@
 	"View/Telas_Principal.h"
 	<windows.h>
 
-1437055050 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.h
+1437062704 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.h
 	<stdio.h>
 	<stdlib.h>
 
-1437052442 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_usuarios.h
+1437063445 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_usuarios.h
 	<stdio.h>
 	<stdlib.h>
 
@@ -195,14 +195,14 @@
 	"Lista_Usuarios.h"
 	"Lista_Livros.h"
 
-1437057634 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.c
+1437063677 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_livros.c
 	"Lista_Livros.h"
 	<string.h>
 	<conio.h>
 	"../libs/biblioteca.h"
 	"../View/Telas_Relatorios.h"
 
-1437054983 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_usuarios.c
+1437063677 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_usuarios.c
 	"Lista_Usuarios.h"
 	<string.h>
 	<conio.h>
@@ -238,7 +238,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1436287876 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_livros.h
+1437061945 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_livros.h
 	"../Model/Lista_Livros.h"
 
 1436288234 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_livros.c
@@ -252,7 +252,7 @@
 	"../View/Telas_Principal.h"
 	"../libs/biblioteca.h"
 
-1436804878 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_relatorios.h
+1437062088 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_relatorios.h
 
 1436806140 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_relatorios.h
 	"../Model/Lista_Usuarios.h"
@@ -493,7 +493,7 @@
 	"../View/Telas_Principal.h"
 	"../libs/biblioteca.h"
 
-1437011761 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_emprestimo.h
+1437061805 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_emprestimo.h
 
 1436985265 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_emprestimo.h
 	"../Model/Lista_Emprestimos.h"
@@ -508,20 +508,20 @@
 	"../Controler/Controler_Emprestimo.h"
 	"../Model/Lista_Emprestimos.h"
 
-1437061455 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\modelconfig.c
+1437063677 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\modelconfig.c
 	"ModelConfig.h"
 	<stdio.h>
 
-1437061092 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\modelconfig.h
+1437063548 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\modelconfig.h
 
-1437061541 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_config.c
+1437061587 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_config.c
 	<stdio.h>
 	<conio.h>
 	"Telas_Config.h"
 	"Telas_Principal.h"
 	"../Model/ModelConfig.h"
 
-1437058307 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_config.h
+1437063592 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_config.h
 	"../Model/ModelConfig.h"
 	<stdio.h>
 	<stdlib.h>
