@@ -29,7 +29,7 @@
     void Iniciliza_Emprestimos();
     int Consulta_Emprestimo(char *Email);
     Lista_Emprestimo *Retorna_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email);
-    Lista_Emprestimo *Get_Emprestimos( char *Email);
+    Emprestimo[] Get_Emprestimos( char *Email);
     int Insere_Emprestimo(Emprestimo E);
 
 

@@ -41,17 +41,17 @@
     return (Emprestimos);
     }
 
-    Lista_Emprestimo *Get_Emprestimos(char *Email){
-        Lista_Emprestimo *emprestimoByEmail;
-        Lista_Emprestimo *E;
-        E= Emprestimos;
+    Emprestimo[] Get_Emprestimos(char *Email){
+        Emprestimo emprestimoByEmail[100];
+        Emprestimos;
         emprestimoByEmail = ((Lista_Emprestimo*)malloc(sizeof(Lista_Emprestimo)));
         emprestimoByEmail->Ant=NULL;
-        while((E!=NULL)){
-            if((strcmp(Email,E->Emp.Email_Usuario)==1)){
+        int count =0;
+        while((Emprestimos!=NULL)){
+            if((strcmp(Email,Emprestimos->Emp.Email_Usuario)==1)){
                 emprestimoByEmail->Emp=E->Emp;
                 emprestimoByEmail = emprestimoByEmail->Prox;
-                E=E->Prox;
+                Emprestimos=Emprestimos->Prox;
             }else
                 E=E->Prox;
         }
