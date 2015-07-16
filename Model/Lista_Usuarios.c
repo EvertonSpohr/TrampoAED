@@ -104,44 +104,78 @@
 
     void salva_usuarios()
     {
+        FILE *Arquivo;
+        Arquivo = fopen("usuarios.csv","w");   /* Arquivo ASCII, para escrita */
 
-        Lista_Usuario *LAux = Users;
 
-         FILE *Arquivo;
-         Arquivo = fopen("usuarios.csv","w");   /* Arquivo ASCII, para escrita */
-
-         if(!Arquivo)
-         {
-            printf( "Erro na abertura do arquivo");
-         }
+        if(!Arquivo)
+        {
+           printf( "Erro na abertura do arquivo");
+        }
          else
          {
-             if(LAux == NULL)
+               if(Users == NULL)
                {
                    printf("Lista de usuarios vazia!");
                }
                else
                {
 
-                while(LAux)
+                while(Users)
                 {
-                    char Info[] = "";
-                    strcat(Info, LAux->Users.Nome);
-                    strcat(Info, ";");
-                    strcat(Info, LAux->Users.Data_Nasc);
-                    strcat(Info, ";");
-                    strcat(Info,  LAux->Users.Area);
-                    strcat(Info, ";");
-                    strcat(Info,  LAux->Users.Email);
-                    strcat(Info, ";");
+                    fprintf(Arquivo, "%s;%s;%s;%s\n",Users->Users.Nome, Users->Users.Data_Nasc, Users->Users.Area, Users->Users.Email);
 
-                    fprintf(Arquivo, "%s",Info);
-
-                    LAux = LAux->Prox;
+                    Users = Users->Prox;
                   }
 
                   fclose(Arquivo);
                }
          }
+    }
+
+void Carrega_Usuarios()
+{
+	FILE *Arquivo;
+    Arquivo = fopen("usuarios.csv","r");
+
+    char Linha[255];
+
+	if(Arquivo == NULL)
+    {
+        printf("Erro, nao foi possivel abrir o arquivo\n");
+    }
+	else
+    {
+        while( !feof(Arquivo) )
+        {
+            fscanf(Arquivo,"%s", &Linha);
+
+            int i;
+            char *p;
+            char *array[5];
+            i = 0;
+            p = strtok (Linha,";");
+
+            while (p != NULL)
+            {
+                array[i++] = p;
+                p = strtok (NULL, ";");
+            }
+
+            Usuario U;
+
+            strcpy(U.Nome, array[0]);
+            strcpy(U.Email, array[1]);
+            strcpy(U.Data_Nasc, array[2]);
+            strcpy(U.Area, array[3]);
+
+            Insere_Usuario(U);
+
+        }
+
 
     }
+	fclose(Arquivo);
+}
+
+

@@ -5,7 +5,7 @@
 #include "../Controler/Controler_Emprestimo.h"
 #include "../Model/Lista_Emprestimos.h"
 
-/*
+
 void Menu_Principal_Emprestimo()
 {
     int OPC;
@@ -24,7 +24,7 @@ void Menu_Principal_Emprestimo()
         gotoxy(31,10);
         printf("[2] PESQUISAR");
         gotoxy(31,11);
-        printf("[5] MENU PRINCIPAL");
+        printf("[3] MENU PRINCIPAL");
         gotoxy(31,12);
         TableBorder(28,15,48,17,1,15,0,0);
         gotoxy(29,16);
@@ -36,8 +36,7 @@ void Menu_Principal_Emprestimo()
         seleciona_menu_Emprestimo(OPC);
 
     }
-    while(OPC < 1 || OPC > 5);
-
+    while(OPC < 1 || OPC > 3);
 }
 
 void Tela_Cadastrar_Emprestimo()
@@ -45,7 +44,7 @@ void Tela_Cadastrar_Emprestimo()
     tela_principal("Cadastrar Emprestimo");
 
     //Usuario, Livro, Data?
-
+    /*
     gotoxy(7,9);
     printf("Titulo: ");
     gotoxy(7,10);
@@ -109,7 +108,7 @@ void Tela_Cadastrar_Emprestimo()
     else
     {
         Menu_Principal_Emprestimo();
-    }
+    }*/
 
 }
 
@@ -119,7 +118,7 @@ void Tela_Pesquisar_Emprestimo()
 
     tela_principal("Pesquisar Emprestimo");
 
-    gotoxy(7,7);
+    /*gotoxy(7,7);
     printf("Email: ");
     fflush(stdin);
     gotoxy(15,7);
@@ -179,7 +178,7 @@ void Tela_Pesquisar_Emprestimo()
         getchar();
         Menu_Principal_Emprestimo();
 
-    }
+    }*/
 
 }
-*/
+

@@ -13,6 +13,10 @@ int main()
     Iniciliza_Usuario();
     Iniciliza_Acervo();
 
+    Carrega_Usuarios();
+    Carrega_Livros();
+    Ler_Config();
+
     tela_menu_principal();
     getchar();
 

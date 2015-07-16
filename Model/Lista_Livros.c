@@ -96,3 +96,98 @@
        }
     }
 
+//=========================================================================================
+
+ void Salva_Livros()
+    {
+        FILE *Arquivo;
+        Arquivo = fopen("acervo.csv","w");   /* Arquivo ASCII, para escrita */
+
+
+        if(!Arquivo)
+        {
+           printf( "Erro na abertura do arquivo");
+        }
+         else
+         {
+               if(Acervo == NULL)
+               {
+                   printf("Lista de livros vazia!");
+               }
+               else
+               {
+
+                while(Acervo)
+                {
+                    fprintf(Arquivo, "%s;%s;%d;%s;%s\n",Acervo->livro.Titulo, Acervo->livro.Ano, Acervo->livro.Num_Exemp, Acervo->livro.Area, Acervo->livro.Autores);
+
+                    Acervo = Acervo->Prox;
+                  }
+
+                  fclose(Arquivo);
+               }
+         }
+    }
+
+void Carrega_Livros()
+{
+	FILE *Arquivo;
+    Arquivo = fopen("acervo.csv","r");
+
+    char Linha[255];
+
+	if(Arquivo == NULL)
+    {
+        printf("Erro, nao foi possivel abrir o arquivo\n");
+    }
+	else
+    {
+        while( !feof(Arquivo) )
+        {
+            fscanf(Arquivo,"%s", &Linha);
+
+            int i;
+            char *p;
+            char *array[5];
+            i = 0;
+            p = strtok (Linha,";");
+            int cont = 1;
+
+            char Autores[255] = "";
+
+            while (p != NULL)
+            {
+                if(cont == 4)
+                {
+                    strcat(Autores, p);
+
+                    p = strtok (NULL, ";");
+                    if(p == NULL)
+                    {
+                        break;
+                    }
+                    else
+                        strcat(Autores, ";");
+                }
+                else
+                {
+                    array[i++] = p;
+                    p = strtok (NULL, ";");
+                    cont++;
+                }
+            }
+
+            Livro L;
+
+            strcpy(L.Titulo, array[0]);
+            strcpy(L.Ano, array[1]);
+            L.Num_Exemp = atoi(array[2]);
+            strcpy(L.Area, array[3]);
+            strcpy(L.Autores, Autores);
+
+            Insere_Acervo(L);
+
+        }
+    }
+	fclose(Arquivo);
+}
