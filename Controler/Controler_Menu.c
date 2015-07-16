@@ -27,8 +27,14 @@
                 break;
 
             case 5:
-                //exit(1);
+                Salvar();
                 break;
 
             }
+     }
+
+     void Salvar()
+     {
+         salva_usuarios();
+         exit(1);
      }

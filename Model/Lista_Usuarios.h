@@ -29,6 +29,7 @@
     int Insere_Usuario(Usuario U);
     int Remover_Usuario(char *Email);
     void Imprime_Usuarios();
+    void salva_usuarios();
 
 
 

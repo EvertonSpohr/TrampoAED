@@ -1,7 +1,8 @@
 #include "Lista_Usuarios.h"
 #include <string.h>
-#include <string.h>
 #include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "../libs/biblioteca.h"
 #include "../View/Telas_Relatorios.h"
 
@@ -101,4 +102,46 @@
        }
     }
 
+    void salva_usuarios()
+    {
 
+        Lista_Usuario *LAux = Users;
+
+         FILE *Arquivo;
+         Arquivo = fopen("usuarios.csv","w");   /* Arquivo ASCII, para escrita */
+
+         if(!Arquivo)
+         {
+            printf( "Erro na abertura do arquivo");
+         }
+         else
+         {
+             if(LAux == NULL)
+               {
+                   printf("Lista de usuarios vazia!");
+               }
+               else
+               {
+
+                while(LAux)
+                {
+                    char Info[] = "";
+                    strcat(Info, LAux->Users.Nome);
+                    strcat(Info, ";");
+                    strcat(Info, LAux->Users.Data_Nasc);
+                    strcat(Info, ";");
+                    strcat(Info,  LAux->Users.Area);
+                    strcat(Info, ";");
+                    strcat(Info,  LAux->Users.Email);
+                    strcat(Info, ";");
+
+                    fprintf(Arquivo, "%s",Info);
+
+                    LAux = LAux->Prox;
+                  }
+
+                  fclose(Arquivo);
+               }
+         }
+
+    }
