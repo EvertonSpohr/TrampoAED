@@ -328,7 +328,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1437056621 c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.h
+1437068562 c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.h
 	<stdio.h>
 	<stdlib.h>
 	"Lista_Usuarios.h"
@@ -371,7 +371,7 @@
 	"View/Telas_Principal.h"
 	<windows.h>
 
-1437053028 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.c
+1437068536 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.c
 	"Lista_Livros.h"
 	"Lista_Emprestimos.h"
 	<string.h>
@@ -437,7 +437,7 @@
 
 1437064556 c:\users\lucas\workspace\aed\trampoaed\controler\controler_emprestimo.h
 
-1437064436 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_emprestimo.c
+1437068620 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_emprestimo.c
 	"Telas_Emprestimo.h"
 	<stdio.h>
 	<conio.h>

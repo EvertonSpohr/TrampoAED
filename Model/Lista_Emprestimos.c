@@ -41,7 +41,7 @@
     return (Emprestimos);
     }
 
-    Lista_Emprestimo *Get_Emprestimos(Lista_Emprestimo *Emprestimos,char *Email){
+    Lista_Emprestimo *Get_Emprestimos(char *Email){
         Lista_Emprestimo *emprestimoByEmail;
         Lista_Emprestimo *E;
         E= Emprestimos;
