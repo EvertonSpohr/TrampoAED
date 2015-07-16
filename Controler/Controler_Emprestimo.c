@@ -16,8 +16,10 @@ void seleciona_menu_Emprestimo(int OPC)
             case 2:
                 Tela_Pesquisar_Emprestimo();
                 break;
-
             case 3:
+                Tela_Devolucao_Emprestimo();
+                break;
+            case 4:
                 tela_menu_principal();
                 break;
             }

@@ -9,10 +9,10 @@
 
     typedef struct Emprestimo
     {
-        char *Data_Emprestimo;
-        char *Email_Usuario;
-        int Codigo_Livro;
-        char *Status;
+        char Data_Emprestimo[255];
+        char Email_Usuario[255];
+        char Status[255];
+        char Titulo[255];
 
     }Emprestimo;
 
@@ -27,10 +27,10 @@
     Lista_Emprestimo *Emprestimos;
 
     void Iniciliza_Emprestimos();
-    int Consulta_Emprestimo(Lista_Emprestimo *Emprestimos,char *Email);
+    int Consulta_Emprestimo(char *Email);
     Lista_Emprestimo *Retorna_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email);
     Lista_Emprestimo *Get_Emprestimos(Lista_Emprestimo *Emprestimos, char *Email);
-    int Insere_Emprestimo(Lista_Emprestimo **Emprestimos, Emprestimo E);
+    int Insere_Emprestimo(Emprestimo E);
     void Imprime_Emprestimos(Lista_Emprestimo *Emprestimos);
 
 
