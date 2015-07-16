@@ -5,6 +5,8 @@
 #include "../View/Telas_Config.h"
 #include "../View/Telas_Emprestimo.h"
 #include "../libs/biblioteca.h"
+#include "../Model/Lista_Livros.h"
+#include "../Model/Lista_Usuarios.h"
 
 
     void seleciona_menu(int OPC)
