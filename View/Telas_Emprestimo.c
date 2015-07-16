@@ -5,7 +5,7 @@
 #include "../Controler/Controler_Emprestimo.h"
 #include "../Model/Lista_Emprestimos.h"
 
-
+/*
 void Menu_Principal_Emprestimo()
 {
     int OPC;
@@ -125,7 +125,7 @@ void Tela_Pesquisar_Emprestimo()
     gotoxy(15,7);
     gets(Email);
 
-    Lista_Emprestimo *LA = Consulta_Emprestimo(Email);
+    Lista_Emprestimo *LA = Consulta_Emprestimo(Emprestimos,Email);
     //Consulta_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email, int codigo);
 
     gotoxy(7,7); clreol();
@@ -182,3 +182,4 @@ void Tela_Pesquisar_Emprestimo()
     }
 
 }
+*/

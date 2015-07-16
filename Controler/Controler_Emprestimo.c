@@ -10,15 +10,15 @@ void seleciona_menu_Emprestimo(int OPC)
             switch (OPC)
             {
             case 1:
-                Tela_Cadastrar_Emprestimo();
+                //Tela_Cadastrar_Emprestimo();
                 break;
 
             case 2:
-                Tela_Pesquisar_Emprestimo();
+                //Tela_Pesquisar_Emprestimo();
                 break;
 
             case 3:
-                tela_menu_principal();
+                //tela_menu_principal();
                 break;
             }
      }
