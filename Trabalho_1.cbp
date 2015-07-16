@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Controler/Controler_Emprestimo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Controler/Controler_Emprestimo.h" />
 		<Unit filename="Controler/Controler_Livros.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -61,8 +65,8 @@
 		<Unit filename="Model/Lista_Usuarios.h" />
 		<Unit filename="View/Telas_Emprestimo.c">
 			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="View/Telas_Emprestimo.h" />
 		<Unit filename="View/Telas_Livros.c">
 			<Option compilerVar="CC" />
 		</Unit>

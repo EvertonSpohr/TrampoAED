@@ -281,7 +281,7 @@
 
 1436896453 c:\users\lucas\workspace\aed\trampoaed\libs\biblioteca.h
 
-1436896453 source:c:\users\lucas\workspace\aed\trampoaed\controler\controler_menu.c
+1437030271 source:c:\users\lucas\workspace\aed\trampoaed\controler\controler_menu.c
 	"Controler_Menu.h"
 	"../View/Telas_Usuario.h"
 	"../View/Telas_Livros.h"
@@ -401,7 +401,7 @@
 	"../Controler/Controler_Usuario.h"
 	"../Model/Lista_Usuarios.h"
 
-1436983289 source:c:\users\lucas\workspace\aed\trampoaed\controler\controler_emprestimo.c
+1437029509 source:c:\users\lucas\workspace\aed\trampoaed\controler\controler_emprestimo.c
 	"Controler_Emprestimo.h"
 	"../View/Telas_Emprestimo.h"
 	"../View/Telas_Principal.h"
@@ -414,7 +414,7 @@
 
 1436983383 c:\users\lucas\workspace\aed\trampoaed\controler\controler_emprestimo.h
 
-1436990788 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_emprestimo.c
+1437030245 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_emprestimo.c
 	"Telas_Emprestimo.h"
 	<stdio.h>
 	<conio.h>

@@ -24,6 +24,7 @@
                 break;
 
             case 4:
+                Menu_Principal_Emprestimo();
                 break;
 
             case 5:
