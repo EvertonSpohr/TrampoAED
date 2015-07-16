@@ -101,7 +101,7 @@
  void Salva_Livros()
     {
         FILE *Arquivo;
-        Arquivo = fopen("acervo.csv","w");   /* Arquivo ASCII, para escrita */
+        Arquivo = fopen("Arquivos/acervo.csv","w");   /* Arquivo ASCII, para escrita */
 
 
         if(!Arquivo)
@@ -132,7 +132,7 @@
 void Carrega_Livros()
 {
 	FILE *Arquivo;
-    Arquivo = fopen("acervo.csv","r");
+    Arquivo = fopen("Arquivos/acervo.csv","r");
 
     char Linha[255];
 

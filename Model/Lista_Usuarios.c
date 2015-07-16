@@ -105,7 +105,7 @@
     void salva_usuarios()
     {
         FILE *Arquivo;
-        Arquivo = fopen("usuarios.csv","w");   /* Arquivo ASCII, para escrita */
+        Arquivo = fopen("Arquivos/usuarios.csv","w");   /* Arquivo ASCII, para escrita */
 
 
         if(!Arquivo)
@@ -136,7 +136,7 @@
 void Carrega_Usuarios()
 {
 	FILE *Arquivo;
-    Arquivo = fopen("usuarios.csv","r");
+    Arquivo = fopen("Arquivos/usuarios.csv","r");
 
     char Linha[255];
 
