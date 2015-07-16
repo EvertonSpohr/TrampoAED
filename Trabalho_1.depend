@@ -184,12 +184,12 @@
 	<stdio.h>
 	<stdlib.h>
 
-1437011761 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.c
+1437065373 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.c
 	"Lista_Livros.h"
 	"Lista_Emprestimos.h"
 	<string.h>
 
-1436985265 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.h
+1437065373 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\lista_emprestimos.h
 	<stdio.h>
 	<stdlib.h>
 	"Lista_Usuarios.h"
@@ -225,7 +225,7 @@
 	"../Controler/Controler_Usuario.h"
 	"../Model/Lista_Usuarios.h"
 
-1436807287 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_livros.c
+1437065373 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_livros.c
 	"Telas_Livros.h"
 	<stdio.h>
 	<conio.h>
@@ -492,7 +492,7 @@
 	"../Model/Lista_Livros.h"
 	"../Model/Lista_Emprestimos.h"
 
-1437050802 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_emprestimo.c
+1437065373 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_emprestimo.c
 	"Controler_Emprestimo.h"
 	"../View/Telas_Emprestimo.h"
 	"../View/Telas_Principal.h"
@@ -500,18 +500,21 @@
 
 1437061805 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\controler\controler_emprestimo.h
 
-1436985265 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_emprestimo.h
+1437065373 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_emprestimo.h
 	"../Model/Lista_Emprestimos.h"
 	<stdio.h>
 	<stdlib.h>
 
-1437050802 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_emprestimo.c
+1437065373 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_emprestimo.c
 	"Telas_Emprestimo.h"
 	<stdio.h>
 	<conio.h>
 	"Telas_Principal.h"
 	"../Controler/Controler_Emprestimo.h"
 	"../Model/Lista_Emprestimos.h"
+	"../Model/Lista_Usuarios.h"
+	"../Model/Lista_Livros.h"
+	<time.h>
 
 1437063677 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\modelconfig.c
 	"ModelConfig.h"
@@ -519,7 +522,7 @@
 
 1437063548 d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\model\modelconfig.h
 
-1437061587 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_config.c
+1437063706 source:d:\dropbox\faculdade\2 ano\material de aed\2015\trabalhos\trabalho_1\view\telas_config.c
 	<stdio.h>
 	<conio.h>
 	"Telas_Config.h"

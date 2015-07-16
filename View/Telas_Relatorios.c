@@ -51,7 +51,7 @@ void Tela_Lista_Emprestimos()
     gotoxy(30,4);
     printf("LISTA DE EMPRESTIMOS");
 
-    Imprime_Emprestimos(NULL);
+    Imprime_Emprestimos_();
 }
 
 
@@ -112,10 +112,38 @@ void Imprime_Usuarios()
          Menu_Principal_Relatorios();
     }
 
- void Imprime_Emprestimos(Lista_Emprestimo *Emprestimos){
+ void Imprime_Emprestimos_()
+ {
 
-    getch();
-    Menu_Principal_Relatorios();
+    Lista_Emprestimo *LAux = Emprestimos;
+
+    if(LAux == NULL)
+    {
+        gotoxy(30,9);
+        printf("Lista de emprestimos vazia!");
+    }
+       else
+       {
+          int Y = 5;
+          int X = 4;
+          int cont = 1;
+
+          while(LAux)
+          {
+                gotoxy(X, ++Y); printf("%d ----------------------------------------------------- ", cont);
+                Y++;
+                gotoxy(X, ++Y); printf("Titulo: %s", LAux->Emp.Titulo);
+                gotoxy(X, ++Y); printf("E-Mail Usuario: %s", LAux->Emp.Email_Usuario);
+                gotoxy(X, ++Y); printf("Data de Emprestimo: %s", LAux->Emp.Data_Emprestimo);
+                gotoxy(X, ++Y); printf("Status: %s", LAux->Emp.Status);
+                Y++; cont++;
+
+                LAux = LAux->Prox;
+          }
+       }
+
+         getch();
+         Menu_Principal_Relatorios();
  }
 
  void Imprime_Acervo()
