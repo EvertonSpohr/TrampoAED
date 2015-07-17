@@ -28,9 +28,10 @@
 
     void Iniciliza_Emprestimos();
     int Consulta_Emprestimo(char *Email);
-    Lista_Emprestimo *Retorna_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email);
     Lista_Emprestimo *EmprestimosByEmail( char *Email);
+    Lista_Emprestimo *Retorna_Emprestimo(char *Email);
     int Insere_Emprestimo(Emprestimo E);
+    void Salva_Emprestimos();
 
 
 #endif // LISTA_EMPRESTIMOS_H_INCLUDED

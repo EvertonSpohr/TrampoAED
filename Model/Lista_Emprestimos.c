@@ -28,19 +28,18 @@
         return (0);
     }
 
-    Lista_Emprestimo *Retorna_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email)
+    Lista_Emprestimo *Retorna_Emprestimo(char *Email)
     {
-    int achou = 0;
-    while((Emprestimos != NULL)&& (!achou))
-    {
-      if((strcmp(Email, Emprestimos->Emp.Email_Usuario) == 1))
-         achou = 1;
-      else
-         Emprestimos = Emprestimos->Prox;
+        int achou = 0;
+        while((Emprestimos != NULL)&& (!achou))
+        {
+          if((strcmp(Email, Emprestimos->Emp.Email_Usuario) == 1))
+             achou = 1;
+          else
+             Emprestimos = Emprestimos->Prox;
+        }
+        return (Emprestimos);
     }
-    return (Emprestimos);
-    }
-
     Lista_Emprestimo *EmprestimosByEmail(char *Email){
 
         if(Consulta_Emprestimo(Email)==1){
@@ -77,7 +76,6 @@
         return NULL;
         }
     }
-
     int Insere_Emprestimo( Emprestimo E)
     {
         Lista_Emprestimo *New;
@@ -100,12 +98,12 @@
     }
 
 
-    int Remover_Emprestimo(Lista_Emprestimo **Emprestimos, char *Email)
+    int Remover_Emprestimo(char Email[])
     {
        Lista_Emprestimo *P;
        int achou = 0;
 
-       P = Retorna_Emprestimo(*Emprestimos, Email);
+       P = Retorna_Emprestimo(Email);
 
        if(P != NULL)
        {
@@ -114,7 +112,7 @@
           if(P->Ant != NULL)
              P->Ant->Prox = P->Prox;
           else
-             (*Emprestimos) = P->Prox;
+             (Emprestimos) = P->Prox;
           free(P);
           achou = 1;
        }
@@ -129,21 +127,77 @@
        }
     }
 
-    /*
-    void Imprime_Acervo(Lista_Acervo *Acervo)
+     void Salva_Emprestimos()
     {
-       if(Acervo == NULL)
-          printf("Acervo de Livros vazio!");
-       else
-       {
-          while(Acervo)
-          {
-            printf("\nCodigo: %d, Titulo: %s, Autores: %s, Ano: %s, Area: %s ,Nro Exemplares: %d  ", Acervo->livro.Codigo,
-            Acervo->livro.Titulo, Acervo->livro.Autores, Acervo->livro.Ano, Acervo->livro.Area, Acervo->livro.Num_Exemp);
+        FILE *Arquivo;
+        Arquivo = fopen("Arquivos/emprestimos.csv","w");   /* Arquivo ASCII, para escrita */
 
-            Acervo = Acervo->Prox;
-          }
-       }
-       getchar();
+
+        if(!Arquivo)
+        {
+           printf( "Erro na abertura do arquivo");
+        }
+         else
+         {
+               if(Emprestimos == NULL)
+               {
+                   printf("Lista de emprestimos vazia!");
+               }
+               else
+               {
+
+                while(Emprestimos)
+                {
+                    fprintf(Arquivo, "%s;%s;%s;%s\n",Emprestimos->Emp.Email_Usuario, Emprestimos->Emp.Titulo, Emprestimos->Emp.Data_Emprestimo, Emprestimos->Emp.Status);
+                    Emprestimos = Emprestimos->Prox;
+                  }
+
+                  fclose(Arquivo);
+               }
+         }
     }
-    */
+
+void Carrega_Emprestimos()
+{
+	FILE *Arquivo;
+    Arquivo = fopen("Arquivos/emprestimos.csv","r");
+
+    char Linha[255];
+
+	if(Arquivo == NULL)
+    {
+        printf("Erro, nao foi possivel abrir o arquivo\n");
+    }
+	else
+    {
+        while( !feof(Arquivo) )
+        {
+            fscanf(Arquivo,"%s", &Linha);
+
+            int i;
+            char *p;
+            char *array[5];
+            i = 0;
+            p = strtok (Linha,";");
+
+            while (p != NULL)
+            {
+                array[i++] = p;
+                p = strtok (NULL, ";");
+            }
+
+            Emprestimo E;
+
+            strcpy(E.Email_Usuario, array[0]);
+            strcpy(E.Titulo, array[1]);
+            strcpy(E.Data_Emprestimo, array[2]);
+            strcpy(E.Status, array[3]);
+
+            Insere_Emprestimo(E);
+
+        }
+
+
+    }
+	fclose(Arquivo);
+}

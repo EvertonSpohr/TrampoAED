@@ -312,55 +312,7 @@ void Tela_Pesquisar_Emprestimo()
 
                 LE = LE->Prox;
           }
-        /*
-        gotoxy(7,9);
-        printf("Titulo: ");
-        gotoxy(7,10);
-        printf("Autor(es): ");
-        gotoxy(7,12);
-        printf("Ano: ");
-        gotoxy(7,13);
-        printf("Numero de exemplares: ");
-        gotoxy(7,14);
-        printf("Area: ");
-
-        fflush(stdin);
-        gotoxy(15,9);
-        puts(LA->livro.Titulo);
-
-        fflush(stdin);
-        gotoxy(18,10);
-        puts(LA->livro.Autores);
-
-        fflush(stdin);
-        gotoxy(12,12);
-        puts(LA->livro.Ano);
-
-        fflush(stdin);
-        gotoxy(29,13);
-        printf("%d", LA->livro.Num_Exemp);
-
-        fflush(stdin);
-        gotoxy(14,14);
-        puts(LA->livro.Area);
-
-        gotoxy(7,18);
-        printf("Tecle <ENTER> para voltar ao menu do acervo");
-
-        getchar();
-        Menu_Principal_Emprestimo();
-
-    }
-    else
-    {
-        gotoxy(7,18);
-        printf("Livro nao encontrado!");
-        getchar();
-        Menu_Principal_Emprestimo();
-
-    }*/
-}
     getchar();
     Menu_Principal_Emprestimo();
+    }
 }
-

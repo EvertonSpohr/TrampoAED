@@ -46,5 +46,6 @@
      {
          salva_usuarios();
          Salva_Livros();
+         Salva_Emprestimos();
          exit(1);
      }
