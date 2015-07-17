@@ -27,7 +27,7 @@ void Menu_Principal_Emprestimo()
         gotoxy(31,10);
         printf("[2] PESQUISAR");
         gotoxy(31,11);
-        printf("[3] Devolucao");
+        printf("[3] DEVOLUÇÃO");
         gotoxy(31,12);
         printf("[4] MENU PRINCIPAL");
         TableBorder(28,15,48,17,1,15,0,0);
@@ -286,7 +286,7 @@ void Tela_Pesquisar_Emprestimo()
     gotoxy(15,7);
     gets(Email);
 
-    Lista_Emprestimo *LE = Get_Emprestimos(Email);
+    Lista_Emprestimo *LE = EmprestimosByEmail(Email);
     //Consulta_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email, int codigo);
 
     gotoxy(7,7); clreol();

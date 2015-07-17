@@ -3,6 +3,7 @@
 
 #include "Model/Lista_Livros.h"
 #include "Model/Lista_Usuarios.h"
+#include "Model/Lista_Emprestimos.h"
 #include "libs/biblioteca.h"
 #include "View/Telas_Principal.h"
 #include <windows.h>
@@ -12,6 +13,7 @@ int main()
 
     Iniciliza_Usuario();
     Iniciliza_Acervo();
+    Iniciliza_Emprestimos();
 
     Carrega_Usuarios();
     Carrega_Livros();

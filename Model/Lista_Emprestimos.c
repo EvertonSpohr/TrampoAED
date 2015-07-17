@@ -41,21 +41,41 @@
     return (Emprestimos);
     }
 
-    Emprestimo[] Get_Emprestimos(char *Email){
-        Emprestimo emprestimoByEmail[100];
-        Emprestimos;
-        emprestimoByEmail = ((Lista_Emprestimo*)malloc(sizeof(Lista_Emprestimo)));
-        emprestimoByEmail->Ant=NULL;
-        int count =0;
-        while((Emprestimos!=NULL)){
-            if((strcmp(Email,Emprestimos->Emp.Email_Usuario)==1)){
-                emprestimoByEmail->Emp=E->Emp;
-                emprestimoByEmail = emprestimoByEmail->Prox;
-                Emprestimos=Emprestimos->Prox;
-            }else
-                E=E->Prox;
+    Lista_Emprestimo *EmprestimosByEmail(char *Email){
+
+        if(Consulta_Emprestimo(Email)==1){
+
+            Lista_Emprestimo *emprestimoByEmail;
+            Lista_Emprestimo *New;
+            Lista_Emprestimo *E = Emprestimos;
+
+
+            emprestimoByEmail=NULL;
+            int counter =0;
+
+            while((E!=NULL)){
+
+                if((strcmp(Email,E->Emp.Email_Usuario)==1)){
+
+                    New = ((Lista_Emprestimo*)malloc(sizeof(Lista_Emprestimo)));
+                    New->Emp=E->Emp;
+                    New->Ant= NULL;
+                    New->Prox=emprestimoByEmail;
+
+                    if(emprestimoByEmail!=NULL){
+                        emprestimoByEmail->Ant = New;
+                    }
+                    emprestimoByEmail = New;
+                    E=E->Prox;
+                    counter++;
+
+                }else
+                    E=E->Prox;
+            }
+            return emprestimoByEmail;
+        }else{
+        return NULL;
         }
-        return emprestimoByEmail;
     }
 
     int Insere_Emprestimo( Emprestimo E)
@@ -70,7 +90,7 @@
               New->Prox = Emprestimos;
               if ((Emprestimos) != NULL)
               {
-                 (Emprestimos)->Ant = New;
+                 Emprestimos->Ant = New;
               }
               Emprestimos = New;
               return(1);
