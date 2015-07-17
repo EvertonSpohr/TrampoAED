@@ -155,7 +155,7 @@ void Carrega_Livros()
 
             while (p != NULL)
             {
-                if(cont == 4)
+                if(cont == 5)
                 {
                     strcat(Autores, p);
 

@@ -273,7 +273,7 @@ char* Get_User(){
     }
 
 }
-
+/*
 void Tela_Pesquisar_Emprestimo()
 {
     char Email[255] = "";
@@ -286,7 +286,7 @@ void Tela_Pesquisar_Emprestimo()
     gotoxy(15,7);
     gets(Email);
 
-    Lista_Emprestimo *LE = Get_Emprestimos(Email);
+    //Lista_Emprestimo *LE = Get_Emprestimos(Email);
     //Consulta_Emprestimo(Lista_Emprestimo *Emprestimos, char *Email, int codigo);
 
     gotoxy(7,7); clreol();
@@ -358,9 +358,9 @@ void Tela_Pesquisar_Emprestimo()
         getchar();
         Menu_Principal_Emprestimo();
 
-    }*/
-}
+    }
+
     getchar();
     Menu_Principal_Emprestimo();
-}
+}*/
 
