@@ -53,8 +53,6 @@ void Tela_Cadastrar_Emprestimo()
     //Livro exixte?
     getchar();
     fflush(stdin);
-
-
     if(user_email!='0'){
         char* livro = Get_Livro();
         if(livro!='0'){
@@ -283,7 +281,7 @@ void Tela_Pesquisar_Emprestimo()
 
     if(LE != NULL)
     {
-        gotoxy(7,7); printf("Emprestimos encontrados!");
+        gotoxy(7,7); printf("EMPRESTIMOS ENCONTRADOS!");
         gotoxy(7,7); clreol();
         int Y = 5;
         int X = 4;
@@ -301,10 +299,18 @@ void Tela_Pesquisar_Emprestimo()
                 Y++; cont++;
 
                 LE = LE->Prox;
+
           }
-    getchar();
-    Menu_Principal_Emprestimo();
+        getchar();
+        clrscr();
+        Menu_Principal_Emprestimo();
+    }else{
+        gotoxy(7,7); printf("NENHUM EMPRESTIMO PARA ESSE EMAIL");
+        getchar();
+        clrscr();
+        Menu_Principal_Emprestimo();
     }
+
 }
 void Tela_Devolucao_Emprestimo(){
     char Email[255] = "";

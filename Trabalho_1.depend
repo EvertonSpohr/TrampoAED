@@ -374,7 +374,7 @@
 	"View/Telas_Principal.h"
 	<windows.h>
 
-1437399389 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.c
+1437400021 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.c
 	"Lista_Livros.h"
 	"Lista_Emprestimos.h"
 	<string.h>
