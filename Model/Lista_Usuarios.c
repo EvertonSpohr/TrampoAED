@@ -165,9 +165,9 @@ void Carrega_Usuarios()
             Usuario U;
 
             strcpy(U.Nome, array[0]);
-            strcpy(U.Email, array[1]);
+            strcpy(U.Area, array[1]);
             strcpy(U.Data_Nasc, array[2]);
-            strcpy(U.Area, array[3]);
+            strcpy(U.Email, array[3]);
 
             Insere_Usuario(U);
 

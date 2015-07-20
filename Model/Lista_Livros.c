@@ -34,15 +34,17 @@
     Lista_Acervo *Busca_Livro_Titulo(char titulo[])
     {
         int achou = 0;
+        Lista_Acervo *LA = Acervo;
 
-        while((Acervo != NULL) && (achou == 0))
+        while((LA != NULL) && (achou < 1))
         {
-          if(strcmp(Acervo->livro.Titulo, titulo) == 0)
+          if(strcmp(LA->livro.Titulo, titulo) == 0)
+
              achou = 1;
           else
-             Acervo = Acervo->Prox;
+             LA = LA->Prox;
         }
-        return (Acervo);
+        return (LA);
     }
 
     int Insere_Acervo(Livro L)

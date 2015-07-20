@@ -8,15 +8,15 @@
     }
 
 
-    int Consulta_Emprestimo( char *Email)
+    int Consulta_Emprestimo( char Email[])
     {
 
         Lista_Emprestimo *P;
         P = Emprestimos;
-
         while(P != NULL)
         {
-            if( (strcmp(Email, P->Emp.Email_Usuario) == 1))
+            //printf("%s---%s",Email,P->Emp.Email_Usuario);
+            if( (strcmp(Email, P->Emp.Email_Usuario) == 0))
             {
                 return(1);
             }
@@ -28,22 +28,44 @@
         return (0);
     }
 
-    Lista_Emprestimo *Retorna_Emprestimo(char *Email)
+int Consulta_Emprestimo_Livro( char Email[], char Livro[])
+    {
+
+        Lista_Emprestimo *P;
+        P = Emprestimos;
+        while(P != NULL)
+        {
+            //printf("%s---%s",Email,P->Emp.Email_Usuario);
+            if( (strcmp(Email, P->Emp.Email_Usuario) == 0)&&(strcmp(Livro, P->Emp.Titulo) == 0))
+            {
+                return(1);
+            }
+            else
+            {
+                P = P->Prox;
+            }
+        }
+        return (0);
+    }
+
+    Lista_Emprestimo *Retorna_Emprestimo(char Email[], char Titulo[])
     {
         int achou = 0;
-        while((Emprestimos != NULL)&& (!achou))
+        Lista_Emprestimo *LE = Emprestimos;
+        while((LE != NULL) && (achou<1))
         {
-          if((strcmp(Email, Emprestimos->Emp.Email_Usuario) == 1))
+          if((strcmp(Email, LE->Emp.Email_Usuario) == 0)&&(strcmp(Titulo, LE->Emp.Titulo) == 0)){
              achou = 1;
+             }
           else
-             Emprestimos = Emprestimos->Prox;
+             LE = LE->Prox;
         }
-        return (Emprestimos);
+        return (LE);
     }
-    Lista_Emprestimo *EmprestimosByEmail(char *Email){
+
+    Lista_Emprestimo *EmprestimosByEmail(char Email[]){
 
         if(Consulta_Emprestimo(Email)==1){
-
             Lista_Emprestimo *emprestimoByEmail;
             Lista_Emprestimo *New;
             Lista_Emprestimo *E = Emprestimos;
@@ -54,8 +76,7 @@
 
             while((E!=NULL)){
 
-                if((strcmp(Email,E->Emp.Email_Usuario)==1)){
-
+                if((strncmp(Email,E->Emp.Email_Usuario,10)==0)){
                     New = ((Lista_Emprestimo*)malloc(sizeof(Lista_Emprestimo)));
                     New->Emp=E->Emp;
                     New->Ant= NULL;
@@ -80,7 +101,7 @@
     {
         Lista_Emprestimo *New;
 
-        if(!Consulta_Emprestimo( E.Email_Usuario))
+        if(!Consulta_Emprestimo_Livro( E.Email_Usuario,E.Titulo))
         {
               New = ((Lista_Emprestimo*)malloc(sizeof(Lista_Emprestimo)));
               New->Emp = E;
@@ -98,15 +119,16 @@
     }
 
 
-    int Remover_Emprestimo(char Email[])
+    int Remover_Emprestimo(char Email[], char Titulo[])
     {
        Lista_Emprestimo *P;
        int achou = 0;
 
-       P = Retorna_Emprestimo(Email);
+       P = Retorna_Emprestimo(Email,Titulo);
 
        if(P != NULL)
        {
+
           if(P->Prox != NULL)
              P->Prox->Ant = P->Ant;
           if(P->Ant != NULL)

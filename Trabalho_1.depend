@@ -330,7 +330,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1437137978 c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.h
+1437396202 c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.h
 	<stdio.h>
 	<stdlib.h>
 	"Lista_Usuarios.h"
@@ -374,19 +374,19 @@
 	"View/Telas_Principal.h"
 	<windows.h>
 
-1437137615 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.c
+1437399389 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_emprestimos.c
 	"Lista_Livros.h"
 	"Lista_Emprestimos.h"
 	<string.h>
 
-1437137703 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_livros.c
+1437399895 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_livros.c
 	"Lista_Livros.h"
 	<string.h>
 	<conio.h>
 	"../libs/biblioteca.h"
 	"../View/Telas_Relatorios.h"
 
-1437064556 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_usuarios.c
+1437370299 source:c:\users\lucas\workspace\aed\trampoaed\model\lista_usuarios.c
 	"Lista_Usuarios.h"
 	<string.h>
 	<conio.h>
@@ -440,7 +440,7 @@
 
 1437064556 c:\users\lucas\workspace\aed\trampoaed\controler\controler_emprestimo.h
 
-1437137640 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_emprestimo.c
+1437399547 source:c:\users\lucas\workspace\aed\trampoaed\view\telas_emprestimo.c
 	"Telas_Emprestimo.h"
 	<stdio.h>
 	<conio.h>
